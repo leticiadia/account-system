@@ -1,5 +1,7 @@
 <?php
 
+    namespace Project\Database\Model;
+
     class Funcionario extends Pessoa
     {
         private string $cargo;

@@ -1,5 +1,7 @@
 <?php
 
+    namespace Project\Database\Model;
+
     class Endereco 
     {
         private string $cidade;
@@ -38,8 +40,4 @@
         }
 
     }
-
-
-
-
 ?>

@@ -1,5 +1,7 @@
 <?php
 
+    namespace Project\Database\Model;
+
     class Pessoa 
     {
         protected string $nome;
@@ -31,7 +33,4 @@
             }
         }
     }
-
-
-
 ?>
