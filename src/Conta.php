@@ -60,8 +60,8 @@ class Conta
        return $this->titular->recuperarNome();
     }
 
-
-    public function recuperarCpfTitular(): string{
+    public function recuperarCpfTitular(): string 
+    {
         return $this->titular->recuperarCpfTitular();
     }
 
