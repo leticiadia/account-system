@@ -30,6 +30,11 @@
                 exit();
             }
         }
+
+        public function recuperarEndereco(): Endereco
+        {
+            return $this->endereco;
+        }
     }
 
 ?>
