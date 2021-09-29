@@ -14,7 +14,7 @@
             parent::__construct($nome, $cpf);
             $this->salario = $salario;
         }
-        
+
         public function alterarNome(string $nome): void
         {
             $this->validaNomeTitular($nome);
@@ -24,11 +24,6 @@
         public function recuperarSalario(): float
         {
             return $this->salario;
-        }
-
-        public function calculaBonificacao(): float
-        {
-            return $this->salario * 0.1;
         }
 
         public function recebeAumento(float $valorAumento): void
