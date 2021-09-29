@@ -1,6 +1,6 @@
 <?php
 
-    namespace Project\Database\Model\Funcionary;
+    namespace Project\Database\Model\Functionary;
 
     class Gerente extends Funcionario
     {
