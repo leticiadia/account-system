@@ -2,7 +2,8 @@
 
     namespace Project\Database\Service;
 
-    use Project\Database\Model\Funcionary\Funcionario;
+    use Project\Database\Model\Functionary\Funcionario;
+    // use Project\Database\Model\Functionary\Funcionario;
 
     class ControladorDeBonificacoes
     {
