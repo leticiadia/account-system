@@ -1,6 +1,6 @@
 <?php
 
-    namespace Project\Database\Model\Funcionary;
+    namespace Project\Database\Model\Functionary;
 
     class Diretor extends Funcionario
     {
@@ -9,7 +9,7 @@
             return $this->recuperarSalario() * 2;
         }
 
-        public function poeAutenticar(string $senha): bool
+        public function podeAutenticar(string $senha): bool
         {
             return $senha === '1234';
         }
