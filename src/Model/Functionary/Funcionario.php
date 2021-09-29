@@ -1,6 +1,6 @@
 <?php
 
-    namespace Project\Database\Model\Funcionary;
+    namespace Project\Database\Model\Functionary;
 
     use Project\Database\Model\{Pessoa, Cpf};
 
@@ -13,8 +13,8 @@
         {
             parent::__construct($nome, $cpf);
             $this->salario = $salario;
-        }
-
+        }     
+        
         public function alterarNome(string $nome): void
         {
             $this->validaNomeTitular($nome);
@@ -33,8 +33,11 @@
                 return;
             }
 
-            $this->salrio += $valorAumento;
+            $this->salario += $valorAumento;
         }
-     }
+
+        abstract public function calculaBonificacao(): float;
+
+    }
 ?>
 
