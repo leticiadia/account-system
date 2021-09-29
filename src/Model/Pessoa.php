@@ -2,8 +2,8 @@
 
     namespace Project\Database\Model;
 
-    class Pessoa 
-    {
+     abstract class Pessoa 
+     {
         protected string $nome;
         private Cpf $cpf;
 
@@ -32,5 +32,5 @@
                 exit();
             }
         }
-    }
+     }
 ?>
