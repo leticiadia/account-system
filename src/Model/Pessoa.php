@@ -12,7 +12,7 @@
         {
             $this->nome = $nome;
             $this->cpf = $cpf;
-            $this->validaNomeTitular($nome);
+            $this->validarNome($nome);
         }
 
         public function recuperarNome(): string
@@ -25,12 +25,14 @@
             return $this->cpf->recuperarCpf();
         }
 
-        protected function validaNomeTitular(string $nomeTitular): void
+        protected function validarNome(string $nomeTitular): void
         {
             if (strlen($nomeTitular) < 5) {
                 echo "Nome precisa ter pelo menos 5 caracteres";
                 exit();
             }
         }
-     }
+
+        use AcessoPropriedades;
+    }
 ?>

@@ -44,11 +44,7 @@
            return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
         }
 
-        public function __get($nomeDoAtributo): string
-        {
-            $metodo = 'recuperar' . ucfirst($nomeDoAtributo);
-            return $this->$metodo();            
-        }
+        use AcessoPropriedades;
 
     }
 ?>
