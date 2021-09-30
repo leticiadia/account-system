@@ -2,7 +2,7 @@
 
     namespace Project\Database\Model;
 
-    class Endereco 
+    final class Endereco 
     {
         private string $cidade;
         private string $bairro;
