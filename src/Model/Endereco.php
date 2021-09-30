@@ -10,7 +10,7 @@
         // Caso o número não precise fazer nenhum tipo de cálculo , não preciso colocar ele como int, apenas como string...
         private string $numero;
 
-        public function __construct(string $cidade, string $bairro, string $rua, string $numero)
+        public function __construct(string $rua, string $numero, string $bairro, string $cidade)
         {
             $this->cidade = $cidade;
             $this->bairro = $bairro;
@@ -37,6 +37,17 @@
         public function recuperarNumero(): string 
         {
             return $this->numero;
+        }
+
+        public function __toString(): string
+        {
+           return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
+        }
+
+        public function __get($nomeDoAtributo): string
+        {
+            $metodo = 'recuperar' . ucfirst($nomeDoAtributo);
+            return $this->$metodo();            
         }
 
     }
