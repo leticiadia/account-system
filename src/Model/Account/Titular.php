@@ -2,11 +2,12 @@
     
     namespace Project\Database\Model\Account;
 
+    use Project\Database\Model\Autenticavel;
     use Project\Database\Model\Cpf;
     use Project\Database\Model\Endereco;
     use Project\Database\Model\Pessoa;
 
-    class Titular extends Pessoa
+    class Titular extends Pessoa implements Autenticavel
     {
         private Endereco $endereco;
 
@@ -24,6 +25,11 @@
         public function recuperarEndereco(): Endereco
         {
             return $this->endereco;
+        }
+
+        public function podeAutenticar(string $senha): bool
+        {
+            return $senha === 'abcd';
         }
     }
 ?>
